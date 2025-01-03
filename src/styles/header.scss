@@ -1,0 +1,39 @@
+header {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+    height: 100dvh;
+
+    background-color: var(--color-green);
+}
+
+.header {
+    &__title {
+        text-transform: uppercase;
+
+        color: var(--color-white);
+
+        span {
+            color: var(--color-yellow);
+        }
+    }
+
+    &__subtitle {
+        color: var(--color-white);
+
+        max-width: 900px;
+
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        @media (width <= 600px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__button-wrapper {
+        margin-top: 2.5rem;
+    }
+}

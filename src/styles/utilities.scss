@@ -1,0 +1,145 @@
+.container {
+    width: 85%;
+
+    margin: 0 auto;
+    max-width: 1500px;
+
+    position: relative;
+
+    @media (width < 700px) {
+        width: 90%;
+    }
+}
+
+.button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    @media (width < 450px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.button {
+    border: 0.0625rem solid transparent;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+
+    font-weight: 600;
+
+    &--green {
+        color: var(--color-white);
+        background-color: var(--color-green);
+
+        &:hover {
+            background-color: var(--color-green-hover);
+        }
+    }
+
+    &--white {
+        color: var(--color-green);
+        background-color: var(--color-white);
+
+        &:hover {
+            background-color: var(--color-white-hover);
+        }
+    }
+
+    &--header {
+        padding: 1rem 2.75rem;
+
+        color: var(--color-green);
+        background-color: var(--color-white);
+
+        &:hover {
+            background-color: var(--color-white-hover);
+        }
+    }
+
+    &--blank {
+        border: 0.0625rem solid var(--color-white);
+
+        color: var(--color-white);
+        background-color: var(--color-transparent);
+
+        &:hover {
+        }
+    }
+
+    &--nav {
+        color: var(--color-white);
+        &:hover {
+            color: var(--color-yellow);
+        }
+    }
+}
+
+.absolute-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 4.5rem;
+    height: 4.5rem;
+
+    border-radius: 50%;
+
+    border-top: 5px solid var(--color-white);
+    border-bottom: 5px solid var(--color-white);
+
+    border-right: 5px solid var(--color-white);
+    border-left: 5px solid var(--color-white);
+
+    font-size: 2.25rem;
+
+    color: var(--color-white);
+    background-color: var(--color-green);
+}
+
+.text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+
+    margin-bottom: 4rem;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    color: var(--color-white);
+
+    img {
+        height: 3rem;
+        width: 3rem;
+    }
+}

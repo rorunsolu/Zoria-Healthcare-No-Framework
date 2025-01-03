@@ -1,0 +1,34 @@
+#conversion {
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-image: url("/src/images/conversion-image-1.jpg");
+        background-size: cover;
+        background-position: center;
+
+        -webkit-filter: brightness(0.5);
+        filter: brightness(0.5);
+    }
+}
+
+.conversion {
+    &__title {
+        color: var(--color-white);
+    }
+
+    &__subtitle {
+        margin-bottom: 2rem;
+
+        color: var(--color-light-white);
+    }
+}

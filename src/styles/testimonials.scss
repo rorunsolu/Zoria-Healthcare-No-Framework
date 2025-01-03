@@ -1,0 +1,120 @@
+.testimonials {
+    &__text-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        line-height: 1.1;
+
+        span {
+            color: var(--color-green);
+        }
+    }
+
+    &__subtitle {
+        //!max-width: 700px;
+    }
+
+    &__card-wrapper {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+
+        @media (width < 500px) {
+            grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+        }
+    }
+
+    &__card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        justify-content: space-between;
+
+        border-radius: var(--border-radius);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 5px solid var(--color-green);
+        padding: var(--padding-card);
+
+        position: relative;
+
+        -webkit-box-shadow: var(--shadow);
+        box-shadow: var(--shadow);
+
+        &-top {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+
+            gap: 1rem;
+
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        &-image-wrapper {
+            width: 3.5rem;
+            height: 3.5rem;
+
+            border-radius: 50%;
+
+            overflow: hidden;
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            span {
+                margin-top: 0.15rem;
+            }
+        }
+
+        &-stars {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            gap: 0.15rem;
+
+            color: var(--color-star);
+        }
+
+        &-middle {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            margin-bottom: 1rem;
+        }
+
+        &-review {
+            font-style: italic;
+        }
+
+        &-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+
+            color: var(--color-black);
+        }
+
+        &-job {
+            color: var(--color-light-black);
+        }
+    }
+}

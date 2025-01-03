@@ -1,0 +1,141 @@
+.articles {
+    &__text-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        span {
+            color: var(--color-green);
+        }
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    &__card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: relative;
+        overflow: hidden;
+
+        height: 300px;
+    }
+
+    &__card-title {
+        margin-bottom: 0.5rem;
+
+        color: var(--color-white);
+    }
+
+    &__card-bottom {
+        margin-top: 1rem;
+    }
+
+    &__card-info {
+        margin-bottom: 1rem;
+
+        color: var(--color-light-white);
+    }
+
+    #articles__card-1 {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+            background-image: url("/src/images/articles-image-1.jpg");
+            background-size: cover;
+            background-position: center;
+
+            -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+        }
+    }
+
+    #articles__card-2 {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+            background-image: url("/src/images/articles-image-2.jpg");
+            background-size: cover;
+            background-position: center;
+
+            -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+        }
+    }
+
+    #articles__card-3 {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+            background-image: url("/src/images/articles-image-3.jpg");
+            background-size: cover;
+            background-position: center;
+
+            -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+        }
+    }
+
+    #articles__card-4 {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+            background-image: url("/src/images/articles-image-4.jpg");
+            background-size: cover;
+            background-position: center;
+
+            -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+        }
+    }
+}

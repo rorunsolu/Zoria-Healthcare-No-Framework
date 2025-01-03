@@ -1,0 +1,126 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-2: hsl(0, 0%, 92.5%);
+    --color-light-white: hsl(0, 0%, 80%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-black-2: hsl(0, 0%, 20%);
+    --color-light-black: hsl(0, 0%, 30%);
+
+    --color-border: hsl(0, 0%, 85%);
+
+    --color-green: hsl(155, 100%, 25%);
+    --color-yellow: hsl(54, 100%, 56%);
+    --color-purple: hsl(270, 50%, 36%);
+    --color-orange: hsl(24, 100%, 50%);
+
+    --color-green-hover: hsl(155, 100%, 15%);
+    --color-white-hover: hsl(0, 0%, 90%);
+
+    --color-star: hsl(48, 100%, 67%);
+
+    --color-header-primary: hsl(220, 5%, 24%);
+    --color-header-secondary: hsl(155, 98%, 22%);
+
+    --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
+
+    --border: 0.015rem solid var(--color-border);
+    --border-radius: 0.35rem;
+
+    --padding-card: 1.25rem;
+    --padding-icon: 0.25rem;
+
+    --transition: 0.2s ease-in-out;
+
+    @media (width < 350px) {
+        --padding-card: 1rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    *::before,
+    *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem 0 0 0;
+
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: var(--color-white);
+}
+
+section {
+    padding: 7.5rem 0;
+
+    @media (width < 600px) {
+        padding: 5rem 0;
+    }
+}
+
+a {
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+
+    width: 100%;
+
+    border-radius: var(--border-radius);
+}
+
+article {
+    border-radius: var(--border-radius);
+    padding: var(--padding-card);
+
+    
+}
+
+button {
+    cursor: pointer;
+
+    background: none;
+}
+
+svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+textarea {
+    overflow: auto;
+}
+label {
+    display: none;
+}
