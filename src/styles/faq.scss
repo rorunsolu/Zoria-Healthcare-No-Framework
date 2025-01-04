@@ -13,6 +13,8 @@
     gap: 1rem;
 
     &__title {
+        margin-bottom: 3rem;
+
         color: var(--color-white);
     }
 
@@ -82,8 +84,4 @@
 
         font-weight: 400;
     }
-}
-
-.faq__title {
-    margin-bottom: 4rem;
 }
