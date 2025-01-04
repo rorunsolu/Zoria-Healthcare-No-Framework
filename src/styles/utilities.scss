@@ -7,7 +7,7 @@
     position: relative;
 
     @media (width < 700px) {
-        width: 90%;
+        width: 92.5%;
     }
 }
 
@@ -64,20 +64,14 @@
         }
     }
 
-    &--blank {
-        border: 0.0625rem solid var(--color-white);
-
-        color: var(--color-white);
-        background-color: var(--color-transparent);
-
-        &:hover {
-        }
-    }
-
     &--nav {
-        color: var(--color-white);
+        padding: 0.5rem 1rem;
+
+        color: var(--color-green);
+        background-color: var(--color-white);
+
         &:hover {
-            color: var(--color-yellow);
+            background-color: var(--color-white-hover);
         }
     }
 }
@@ -132,6 +126,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    gap: 0.35rem;
 
     font-size: 1.25rem;
     font-weight: 600;

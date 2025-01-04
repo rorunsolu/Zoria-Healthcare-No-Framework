@@ -12,6 +12,7 @@ import './styles/pricing.scss';
 import './styles/conversion.scss';
 import './styles/testimonials.scss';
 import './styles/articles.scss';
+import './styles/faq.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
   const openNavBtn = document.querySelector('.nav__toggle-open');
@@ -46,4 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = 'auto';
     }
   });
+
+  const faqHeaders = document.querySelectorAll(".faq__header");
+
+  faqHeaders.forEach(faqHeader => {
+    faqHeader.addEventListener("click", () => {
+      faqHeader.classList.toggle("active");
+      const faqBody = faqHeader.nextElementSibling;
+
+      if (faqHeader.classList.contains("active")) {
+        faqBody.style.maxHeight = faqBody.scrollHeight + "px";
+      } else {
+        faqBody.style.maxHeight = 0;
+      }
+    });
+  });
 });
+
