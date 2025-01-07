@@ -1,0 +1,1 @@
+This is sort of a throwaway website. I only made this so that I could easily convert it into a react site. Responsiveness isn't done on this but will be dealt wth in the react version of the website :)
